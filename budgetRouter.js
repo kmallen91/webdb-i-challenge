@@ -40,3 +40,5 @@ router.delete('/:id', (req, res) => {
         .then(account => res.status(200).json(account))
         .catch(err => res.status(500).json({error: 'Error deleting the account'}))
 })
+
+module.exports = router
